@@ -1,12 +1,13 @@
 package main
 
 import "github.com/gin-gonic/gin"
+import "net/http"
 
 func main() {
 	r := gin.Default()
 
 	r.GET("/ping", func(ctx *gin.Context) {
-		ctx.JSON(200, gin.H{
+		ctx.JSON(http.StatusOK, gin.H{
 			"message": "pong",
 		})
 	})
