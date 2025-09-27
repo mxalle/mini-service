@@ -1,4 +1,4 @@
-package mirachat
+package main
 
 import (
 	"os"
